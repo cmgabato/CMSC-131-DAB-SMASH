@@ -367,6 +367,9 @@ PRINT_GAME_OVER_SCREEN PROC NEAR          ;render game over screen
 
   MOV SCORE, 0                ;reset stats
   MOV MISSES, 0
+  MOV DELAY_CONSTANT, 8
+  MOV ITERATEE_LOOP, 1
+  MOV MOLE_STAY_LOOP, 3
 
   GOS_CHOOSE:
   MOV   AH,     1                 ; code for "read a character"
